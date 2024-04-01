@@ -1,12 +1,12 @@
 {
-  "name": "@Polyglot-Spa-V2/navbar",
+  "name": "@polyglot-spa-v2/navbar",
   "scripts": {
     "build": "concurrently npm:build:*",
     "build:rollup": "rollup -c",
     "start": "rollup -c -w",
     "serve": "sirv dist -c --port 5003",
     "test": "jest",
-    "prepare": "husky install",
+    "prepare": "node .husky/install.mjs",
     "format": "prettier --write --plugin-search-dir=. .",
     "check-format": "prettier --plugin-search-dir=. --check ."
   },
@@ -20,6 +20,7 @@
     "@testing-library/svelte": "^3.0.3",
     "babel-jest": "^27.5.1",
     "concurrently": "^6.2.1",
+    "husky": "^9.0.11",
     "jest": "^27.5.1",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
